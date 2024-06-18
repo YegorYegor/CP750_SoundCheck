@@ -1,0 +1,62 @@
+    <AutomationCueMacro>
+        <Name>SoundCheck Sine10k</Name>
+        <Id>urn:uuid:5012d7da-ac9d-40a5-9ba9-9410510b286e</Id>
+        <CommandList>
+            <Command>
+                <Type>DeviceRawSendMessage</Type>
+                <DeviceName>CP_750</DeviceName>
+                <MessageType>text</MessageType>
+                <Message>cp750.sys.full_ascii_ctrl on</Message>
+            </Command>
+            <Command>
+                <Type>DeviceRawSendMessage</Type>
+                <DeviceName>CP_750</DeviceName>
+                <MessageType>text</MessageType>
+                <Message>cp750.sys.alignment_mode all</Message>
+            </Command>
+            <Command>
+                <Type>DeviceRawSendMessage</Type>
+                <DeviceName>CP_750</DeviceName>
+                <MessageType>text</MessageType>
+                <Message>cp750.sys.alignment_mode all</Message>
+            </Command>
+            <Command>
+                <Type>DeviceRawSendMessage</Type>
+                <DeviceName>CP_750</DeviceName>
+                <MessageType>text</MessageType>
+                <Message>cp750.ctrl.alignment_mode_tickle 10</Message>
+            </Command>
+            <Command>
+                <Type>DeviceRawSendMessage</Type>
+                <DeviceName>CP_750</DeviceName>
+                <MessageType>text</MessageType>
+                <Message>cp750.sys.signal_gen_mode sine_10k</Message>
+            </Command>
+            <Command>
+                <Type>DeviceRawSendMessage</Type>
+                <DeviceName>CP_750</DeviceName>
+                <MessageType>text</MessageType>
+                <Message>cp750.sys.signal_gen_rotate 1</Message>
+            </Command>
+            <Command>
+                <Type>Black</Type>
+                <Duration>9</Duration>
+            </Command>
+            <Command>
+                <Type>DeviceRawSendMessage</Type>
+                <DeviceName>CP_750</DeviceName>
+                <MessageType>text</MessageType>
+                <Message>cp750.ctrl.alignment_mode_tickle 10</Message>
+            </Command>
+            <Command>
+                <Type>Black</Type>
+                <Duration>9</Duration>
+            </Command>
+            <Command>
+                <Type>DeviceRawSendMessage</Type>
+                <DeviceName>CP_750</DeviceName>
+                <MessageType>text</MessageType>
+                <Message>cp750.ctrl.alignment_mode_tickle 10</Message>
+            </Command>
+        </CommandList>
+    </AutomationCueMacro>
